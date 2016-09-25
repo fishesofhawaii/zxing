@@ -138,7 +138,7 @@ final class CameraConfigurationManager {
   }
 
   void setDesiredCameraParameters(OpenCamera camera, boolean safeMode) {
-
+    camera.setDisplayOrientation(90);
     Camera theCamera = camera.getCamera();
     Camera.Parameters parameters = theCamera.getParameters();
 
